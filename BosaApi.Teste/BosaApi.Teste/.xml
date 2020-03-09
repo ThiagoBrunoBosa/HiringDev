@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BosaApi.Teste</name>
+    </assembly>
+    <members>
+        <member name="T:BosaApi.Teste.Controllers.YouTubeController">
+            <summary>
+            Métodos de pesquisa e retorno
+            </summary>
+        </member>
+        <member name="M:BosaApi.Teste.Controllers.YouTubeController.GetAll">
+            <summary>
+            Recuperar todos itens do banco de dados
+            </summary>
+            <returns>itens desejados</returns>
+        </member>
+        <member name="M:BosaApi.Teste.Controllers.YouTubeController.GetItem(System.Int32)">
+            <summary>
+            Recuperar um item do banco de dados
+            </summary>
+            <param name="id">Código do item desejado</param>
+            <returns>Item desejado</returns>
+        </member>
+        <member name="M:BosaApi.Teste.Controllers.YouTubeController.SearchWithBd(System.String)">
+            <summary>
+            Retorna os dez primeiros resultados de vídeos da api do youtube (sem banco de dados)
+            </summary>
+            <param name="researchTerm">Termos de pesquisa</param>
+            <returns>10 primeiros vídeos do termo pesquisado salvando no banco de dados</returns>
+        </member>
+        <member name="M:BosaApi.Teste.Controllers.YouTubeController.Search(System.String)">
+            <summary>
+            Retorna dez primeiros resultados de vídeos da api do youtube (sem banco de dados)
+            </summary>
+            <param name="researchTerm">Termos de pesquisa</param>
+            <returns>10 primeiros vídeos do termo pesquisado</returns>
+        </member>
+        <member name="T:BosaApi.Teste.Filters.AuthorizeCheckOperationFilter">
+            <summary>
+            Filter para ocultar o 'lock' da ações não autenticadas.
+            </summary>
+        </member>
+        <member name="T:BosaApi.Teste.Filters.ExceptionFilter">
+            <summary>
+            Filter padrão de tratamento de erros
+            </summary>
+        </member>
+        <member name="T:BosaApi.Teste.Filters.ValidateModelFilterAttribute">
+            <summary>
+            Filter padrão de tratamento de Request
+            </summary>
+        </member>
+        <member name="T:BosaApi.Teste.Filters.ValidateModelOperationFilter">
+            <summary>
+            Filter para adicionar o BadRequest para ações com ModelState
+            </summary>
+        </member>
+        <member name="T:BosaApi.Teste.Initializers.ApiInit">
+            <summary>
+            Inicializador da WebApi
+            </summary>
+        </member>
+        <member name="T:BosaApi.Teste.Initializers.SwaggerInit">
+            <summary>
+            Configuração do Swagger, responsável para UI da Web Api
+            </summary>
+        </member>
+        <member name="P:BosaApi.Teste.Models.YouTubeResponse.Id">
+            <summary>
+            Código
+            </summary>
+        </member>
+        <member name="P:BosaApi.Teste.Models.YouTubeResponse.SearchDsc">
+            <summary>
+            Nome
+            </summary>
+        </member>
+        <member name="M:BosaApi.Teste.Program.CreateDbIfNotExists(Microsoft.AspNetCore.Hosting.IWebHost)">
+            <summary>
+            Configurei o banco de dados para utilizar um SQLEXPRESS.
+            Se precisar mudar isso, veja a string de conexão no 'appsettings.json'.
+            </summary>
+        </member>
+        <member name="T:BosaApi.Teste.Useful.AppSettings">
+            <summary>
+            Abstração dos dados do appsettings.json
+            </summary>
+        </member>
+    </members>
+</doc>

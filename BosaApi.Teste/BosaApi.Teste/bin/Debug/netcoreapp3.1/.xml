@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BosaApi.Teste</name>
+    </assembly>
+    <members>
+        <member name="M:BosaApi.Teste.Controllers.MongoController.Get(System.String)">
+            <summary>
+            Recuperar todos itens
+            </summary>
+            <param name="id">Código do item desejado</param>
+            <returns>itens desejados</returns>
+        </member>
+        <member name="M:BosaApi.Teste.Controllers.MongoController.Create(BosaApi.Teste.Models.Database.YouTube)">
+            <summary>
+            Recuperar todos itens
+            </summary>
+            <param name="youtube">Código do item desejado</param>
+            <returns>itens desejados</returns>
+        </member>
+        <member name="M:BosaApi.Teste.Controllers.MongoController.Update(System.String,BosaApi.Teste.Models.Database.YouTube)">
+            <summary>
+            Recuperar todos itens
+            </summary>
+            <param name="id">Código do item desejado</param>
+            <param name="youtubeIn">Código do item desejado</param>
+            <returns>itens desejados</returns>
+        </member>
+        <member name="M:BosaApi.Teste.Controllers.MongoController.Delete(System.String)">
+            <summary>
+            Recuperar todos itens
+            </summary>
+            <param name="id">Código do item desejado</param>
+            <returns>itens desejados</returns>
+        </member>
+        <member name="T:BosaApi.Teste.Controllers.YouTubeController">
+            <summary>
+            Métodos de empresa (Privada, Read Only)
+            </summary>
+        </member>
+        <member name="M:BosaApi.Teste.Controllers.YouTubeController.GetAll">
+            <summary>
+            Recuperar todos itens
+            </summary>
+            <returns>itens desejados</returns>
+        </member>
+        <member name="M:BosaApi.Teste.Controllers.YouTubeController.GetItem(System.String)">
+            <summary>
+            Recuperar um item
+            </summary>
+            <param name="id">Código do item desejado</param>
+            <returns>Item desejado</returns>
+        </member>
+        <member name="M:BosaApi.Teste.Controllers.YouTubeController.Search(System.String)">
+            <summary>
+            Recuperar um item
+            </summary>
+            <param name="search">Termos de pesquisa</param>
+            <returns>Item desejado</returns>
+        </member>
+        <member name="T:BosaApi.Teste.Filters.AuthorizeCheckOperationFilter">
+            <summary>
+            Filter para ocultar o 'lock' da ações não autenticadas.
+            </summary>
+        </member>
+        <member name="T:BosaApi.Teste.Filters.ExceptionFilter">
+            <summary>
+            Filter padrão de tratamento de erros
+            </summary>
+        </member>
+        <member name="T:BosaApi.Teste.Filters.ValidateModelFilterAttribute">
+            <summary>
+            Filter padrão de tratamento de Request
+            </summary>
+        </member>
+        <member name="T:BosaApi.Teste.Filters.ValidateModelOperationFilter">
+            <summary>
+            Filter para adicionar o BadRequest para ações com ModelState
+            </summary>
+        </member>
+        <member name="T:BosaApi.Teste.Initializers.ApiInit">
+            <summary>
+            Inicializador da WebApi
+            </summary>
+        </member>
+        <member name="T:BosaApi.Teste.Initializers.SwaggerInit">
+            <summary>
+            Configuração do Swagger, responsável para UI da Web Api
+            </summary>
+        </member>
+        <member name="P:BosaApi.Teste.Models.YouTubeResponse.Id">
+            <summary>
+            Código
+            </summary>
+        </member>
+        <member name="P:BosaApi.Teste.Models.YouTubeResponse.SearchDsc">
+            <summary>
+            Nome
+            </summary>
+        </member>
+        <member name="M:BosaApi.Teste.Program.CreateDbIfNotExists(Microsoft.AspNetCore.Hosting.IWebHost)">
+            <summary>
+            Configurei o banco de dados para utilizar um SQLEXPRESS.
+            Se precisar mudar isso, veja a string de conexão no 'appsettings.json'.
+            </summary>
+        </member>
+        <member name="T:BosaApi.Teste.Useful.AppSettings">
+            <summary>
+            Abstração dos dados do appsettings.json
+            </summary>
+        </member>
+    </members>
+</doc>
